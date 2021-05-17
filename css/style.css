@@ -54,7 +54,7 @@ section {
 }
 
 .split-evenly > * + * {
-  margin-left: 10vw;
+  margin-left: 5vw;
 }
 
 .img {
@@ -69,7 +69,7 @@ section {
 }
 
 .section-title {
-  font-size: calc(2.250rem + 1.48vw);
+  font-size: calc(2rem + 1vw);
   color: #1D4E56;
   text-transform: uppercase;
   line-height: 1em;
@@ -144,12 +144,28 @@ section {
           align-items: center;
 }
 
+.header .navbar .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .nav-text {
+  margin-left: 1vw;
+  text-transform: uppercase;
+  color: #1D4E56;
+  font-size: 0.6rem;
+}
+
 .header .navbar .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 60%;
-  min-width: 580px;
+  min-width: 680px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -164,14 +180,20 @@ section {
   margin-left: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header .navbar .nav-menu .nav-item + .nav-item {
     margin: 1.5rem 0;
   }
 }
 
-.header .navbar .nav-menu .nav-item:nth-child(3) {
-  margin-left: auto;
+.header .navbar .nav-menu .nav-item:nth-child(4) {
+  margin-left: initial;
+}
+
+@media screen and (min-width: 1024px) {
+  .header .navbar .nav-menu .nav-item:nth-child(4) {
+    margin-left: auto;
+  }
 }
 
 .hamburger {
@@ -188,7 +210,7 @@ section {
   background-color: #1D4E56;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -198,7 +220,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -226,7 +248,7 @@ section {
     margin: 1em;
     padding: 0;
   }
-  .nav-menu .nav-item:nth-child(3) {
+  .nav-menu .nav-item:nth-child(4) {
     margin-left: initial !important;
   }
   .nav-menu.active {
@@ -243,9 +265,12 @@ section {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
+  .header.fixed {
+    position: fixed;
+  }
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary, .sect-1 .btn-secondary {
   border-radius: 100px;
   text-transform: uppercase;
   font-weight: bold;
@@ -257,10 +282,26 @@ section {
   transition: all 300ms ease-in-out;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover, .btn-secondary:hover,
+.btn-primary:focus,
+.btn-secondary:focus {
   background-color: transparent;
   color: #EF233C !important;
+  -webkit-box-shadow: 0 0 0 1px #EF233C;
+          box-shadow: 0 0 0 1px #EF233C;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #EF233C !important;
+  -webkit-box-shadow: 0 0 0 1px #EF233C;
+          box-shadow: 0 0 0 1px #EF233C;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #EF233C;
+  color: #fff !important;
   -webkit-box-shadow: 0 0 0 1px #EF233C;
           box-shadow: 0 0 0 1px #EF233C;
 }
@@ -276,33 +317,46 @@ section {
   }
 }
 
-.sect-1 .btn-primary {
+.sect-1 .btn-primary, .sect-1 .btn-secondary {
   border-radius: 100px;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #EF233C;
   color: #fff !important;
   padding: 0.33em 1em;
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 0.6vw);
   cursor: pointer;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
-.sect-1 .btn-primary + .btn-primary {
+.sect-1 .btn-primary:hover, .sect-1 .btn-secondary:hover,
+.sect-1 .btn-primary:focus,
+.sect-1 .btn-secondary:focus {
+  background-color: transparent;
+  color: #EF233C !important;
+  -webkit-box-shadow: 0 0 0 1px #EF233C;
+          box-shadow: 0 0 0 1px #EF233C;
+}
+
+.sect-1 .btn-secondary {
   margin-left: 1em;
+  background-color: transparent;
+  color: #EF233C !important;
+  -webkit-box-shadow: 0 0 0 1px #EF233C;
+          box-shadow: 0 0 0 1px #EF233C;
 }
 
 @media screen and (max-width: 350px) {
-  .sect-1 .btn-primary + .btn-primary {
+  .sect-1 .btn-secondary {
     margin-left: 0.1em;
   }
 }
 
-.sect-1 .btn-primary:hover,
-.sect-1 .btn-primary:focus {
-  background-color: transparent;
-  color: #EF233C !important;
+.sect-1 .btn-secondary:hover,
+.sect-1 .btn-secondary:focus {
+  background-color: #EF233C;
+  color: #fff !important;
   -webkit-box-shadow: 0 0 0 1px #EF233C;
           box-shadow: 0 0 0 1px #EF233C;
 }

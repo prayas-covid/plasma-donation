@@ -52,7 +52,7 @@ section {
 }
 
 .split-evenly>*+* {
-    margin-left: 10vw;
+    margin-left: 5vw;
     // outline: 1px solid red;
 }
 
@@ -66,7 +66,7 @@ section {
 }
 
 .section-title {
-    font-size: calc(2.250rem + 1.48vw);
+    font-size: calc(2rem + 1vw);
     color: $primary-1;
     text-transform: uppercase;
     line-height: 1em;
@@ -122,6 +122,20 @@ section {
     box-shadow: 0 0 0 1px $tertiary-1;
 }
 
+.btn-secondary {
+    @extend.btn-primary;
+    background-color: transparent;
+    color: $tertiary-1 !important;
+    box-shadow: 0 0 0 1px $tertiary-1;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: $tertiary-1;
+    color: #fff !important;
+    box-shadow: 0 0 0 1px $tertiary-1;
+}
+
 // ============ section-1 ===============
 
 .sect-1 {
@@ -140,17 +154,9 @@ section {
         background-color: $tertiary-1;
         color: #fff !important;
         padding: 0.33em 1em;
-        font-size: calc(1rem + 1vw);
+        font-size: calc(1rem + 0.6vw);
         cursor: pointer;
         transition: all 300ms ease-in-out;
-    }
-
-    .btn-primary+.btn-primary {
-        margin-left: 1em;
-
-        @media screen and (max-width: 350px) {
-            margin-left: 0.1em;
-        }
     }
 
     .btn-primary:hover,
@@ -160,7 +166,24 @@ section {
         box-shadow: 0 0 0 1px $tertiary-1;
     }
 
+    .btn-secondary {
+        margin-left: 1em;
+        @extend.btn-primary;
+        background-color: transparent;
+        color: $tertiary-1 !important;
+        box-shadow: 0 0 0 1px $tertiary-1;
 
+        @media screen and (max-width: 350px) {
+            margin-left: 0.1em;
+        }
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+        background-color: $tertiary-1;
+        color: #fff !important;
+        box-shadow: 0 0 0 1px $tertiary-1;
+    }
 
     .hero-text {
         font-size: 1.125rem;

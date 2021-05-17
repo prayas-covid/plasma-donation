@@ -382,8 +382,13 @@ section {
             box-shadow: 0 0 0.5rem 0px rgba(0, 0, 0, 0.05);
             overflow: hidden;
             padding: 1em;
-            text-align: center;
-            // min-width: 250px;
+            @include flex-center();
+            flex-direction: column;
+            min-width: 200px;
+
+            &>* {
+                // outline: 1px solid red;
+            }
 
             .image {
                 @include flex-center();
@@ -420,6 +425,9 @@ section {
                 color: $primary-1;
                 font-weight: normal;
                 margin-bottom: 1em;
+                max-width: 30ch;
+                text-align: center;
+                // outline: 1px solid red;
             }
 
 

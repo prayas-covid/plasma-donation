@@ -122,10 +122,72 @@
             </div>
             </div>
         </section>
+
+        <section class="sect-4">
+            <div class="container">
+                <h1 class="section-title">Faq</h1>
+
+                <div class="faq-container">
+                    <div class="accordion-container">
+                        <button class="accordion"> <img src="https://img.icons8.com/metro/26/000000/plus.png"/>Am i eligible to register as a plasma donor?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellendus eveniet magnam dolorem cumque dolore quis! Ipsum ullam modi, placeat obcaecati assumenda labore sint ab explicabo enim aliquid laborum optio.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <button class="accordion"> <img src="https://img.icons8.com/metro/26/000000/plus.png"/>How to become a volunteer</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellendus eveniet magnam dolorem cumque dolore quis! Ipsum ullam modi, placeat obcaecati assumenda labore sint ab explicabo enim aliquid laborum optio.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <button class="accordion"> <img src="https://img.icons8.com/metro/26/000000/plus.png"/>Am i eligible to register as a plasma donor?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellendus eveniet magnam dolorem cumque dolore quis! Ipsum ullam modi, placeat obcaecati assumenda labore sint ab explicabo enim aliquid laborum optio.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <button class="accordion"> <img src="https://img.icons8.com/metro/26/000000/plus.png"/>Am i eligible to register as a plasma donor?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellendus eveniet magnam dolorem cumque dolore quis! Ipsum ullam modi, placeat obcaecati assumenda labore sint ab explicabo enim aliquid laborum optio.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <button class="accordion"> <img src="https://img.icons8.com/metro/26/000000/plus.png"/>Am i eligible to register as a plasma donor?</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellendus eveniet magnam dolorem cumque dolore quis! Ipsum ullam modi, placeat obcaecati assumenda labore sint ab explicabo enim aliquid laborum optio.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <div class="social-icons">
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>2021 Prayas, An IIT Bombay Alumini Initiative</p>
+    </footer>
 
-
+    <script>
+        const acc = document.getElementsByClassName("accordion");
+        let i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
     <script src="js/navbar.js"></script>
 </body>
 </html>

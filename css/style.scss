@@ -383,6 +383,20 @@ section {
             overflow: hidden;
             padding: 1em;
             text-align: center;
+            // min-width: 250px;
+
+            .image {
+                @include flex-center();
+                // outline: 1px solid red;
+            }
+
+            .card-img {
+                max-width: 200px;
+                display: block;
+                width: 100%;
+                // align-self: center;
+                // outline: 1px solid red;
+            }
 
             @media screen and (min-width: 450px) {
                 margin: 2rem;
@@ -407,6 +421,8 @@ section {
                 font-weight: normal;
                 margin-bottom: 1em;
             }
+
+
         }
 
         .owl-dots {

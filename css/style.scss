@@ -312,3 +312,90 @@ section {
     }
 
 }
+
+// =============== section 4 ================
+
+.sect-4{
+    padding: 4rem 0;
+    // outline: 1px solid red;
+
+    @media screen and (min-width: 768px) {
+        padding: 8rem 0 5rem 0;
+    }
+
+    .faq-container{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        @media(max-width: 768px){
+            grid-template-columns: 1fr;
+        }
+        .accordion-container{
+            width: 80%;
+            margin-bottom: 30px;
+            @media(max-width: 768px){
+                width: 100%;
+            }
+            .accordion{
+                font-family: 'Oswald', sans-serif;
+                cursor: pointer;
+                background-color: transparent;
+                padding: 10px;
+                border: none;
+                outline: none;
+                font-size: calc(1rem + 0.7vw);
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                text-align: left;
+                color: $primary-1;
+                
+                img{
+                    margin-right: 10px;
+                }
+            }
+            .panel {
+                width: 80%;
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin: auto;
+                display: none;
+                @media(max-width: 768px){
+                    width: 95%;
+                }
+            }
+            .active, .accordion:hover {
+                background-color: $primary-2; 
+            }
+        }
+    }
+}
+
+
+// ==========Footer==================
+
+footer{
+    min-height: 25vh;
+    background-color: $primary-2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        .fa{
+            font-size: 30px;
+            
+        }
+    }
+    p{
+        color: $primary-1;
+    }
+}

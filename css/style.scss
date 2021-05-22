@@ -386,10 +386,6 @@ section {
             flex-direction: column;
             min-width: 200px;
 
-            &>* {
-                // outline: 1px solid red;
-            }
-
             .image {
                 @include flex-center();
                 // outline: 1px solid red;

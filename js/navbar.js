@@ -1,13 +1,12 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const mainNavLinks = document.querySelectorAll('.abc');
-const sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('section');
 const navLink = document.querySelectorAll(".nav-link");
 
 // header fixed only when menu opened
-const header = document.querySelector(".header")
+const header = document.querySelector(".header");
 const body = document.querySelector("body");
-console.log(body);
 
 
 window.addEventListener('scroll', e => {

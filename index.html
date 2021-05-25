@@ -26,7 +26,7 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="container">
+        <div class="container nav-wrapper">
             <nav class="navbar">
                 <a href="#" class="nav-logo">
                     <img class ="logo-img" src="images/Prayas_Logo_2.png" alt="Prayas logo">
@@ -36,12 +36,12 @@
                     <li class="nav-item"><a href="#" class="nav-link nav-link--underline">home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link nav-link--underline">about us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link nav-link--underline">Prayas</a></li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScHquax827P_b4YjkaKbpNKVJp-8zSz79u424wTjTfVy8t4iQ/viewform?embedded=true" target="_blank" class="nav-link btn-secondary">Register As a Volunteer</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk7yP45u78pivIGFcVp1fuEkGqoaah9lT18Z4pV8fGa6j4Eg/viewform?embedded=true" target="_blank" class="nav-link btn-primary">Register As a Donor</a>
-                    </li>
+                    </li> -->
                 </ul>
             
                 <div class="hamburger">
@@ -61,12 +61,18 @@
                         <h1 class="section-title">
                             helping Covid-19 patients find plasma donors
                         </h1>
-                        <p class="hero-text">
+                        <div class="contact">
+                            <p class="text-2">
+                                Contact (Kanush Agrawal) :
+                                <a href="tel://+91 8169890972" class="phn">+91 8169890972</a>
+                            </p>                        
+                        </div>
+                        <!-- <p class="hero-text">
                             Register yourself here to :
                         </p>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk7yP45u78pivIGFcVp1fuEkGqoaah9lT18Z4pV8fGa6j4Eg/viewform?embedded=true" target="_blank" class="btn-primary">Donate</a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScHquax827P_b4YjkaKbpNKVJp-8zSz79u424wTjTfVy8t4iQ/viewform?embedded=true" target="_blank" class="btn-secondary">volunteer</a>
-                    </div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScHquax827P_b4YjkaKbpNKVJp-8zSz79u424wTjTfVy8t4iQ/viewform?embedded=true" target="_blank" class="btn-secondary">volunteer</a>-->
+                    </div> 
                     <div class="image md-visible">
                         <img src="./images/hero-img.svg" alt="plasma donation procedure image" class="img">
                     </div>
@@ -76,40 +82,14 @@
 
         <section class="sect-2">
             <div class="container">
-                <div class="patients-connected">
-                    <p class="sub-heading">Donors connected with patients: <span class="number">21</span></p>
-                </div>
-                <h1 class="section-title">
-                    live availability of plasma donors
-                </h1>
-                <p class="text">
-                    Search For donors near you
-                </p>
                 <div class="md-split-evenly">
-                    <div class="search">
-                        <label for="city" class="form-text">Your city</label>
-                        <input type="text" class="search-field" id="city" placeholder="eg. Delhi">
+                    <div class="patients-connected">
+                        <p class="sub-heading"><span class="number">21</span>Donors connected with patients across 25+ cities </p>
                     </div>
-                    <div class="search">
-                        <label for="blood-grp" class="form-text">Blood Group</label>
-                        <input type="text" class="search-field" id="blood-grp" placeholder="eg. B+">
+                    <div class="donors">
+                        <div class="wrapper-img"><img src="./images/donor-1.jpg" alt="donor photo" class=" img donors__img donors__img--1"></div>
+                        <div class="wrapper-img"><img src="./images/donor-2.jpg" alt="donor photo" class="img donors__img donors__img--2"></div>
                     </div>
-                </div>
-
-                <div class="table">
-
-                </div>
-                <div class="center">
-                    <div class="request">
-                        <a href="#" class="btn-primary request-btn"> request donor</a>
-                    </div>
-                    <div class="contact">
-                        <p class="text-2">
-                            Contact (Kanush Agrawal) :
-                            <a href="tel://+91 8169890972" class="phn">+91 8169890972</a>
-                        </p>                        
-                    </div>
-                    
                 </div>
             </div>
         </section>
@@ -289,7 +269,7 @@
             }
           });
         }
-        </script>
+    </script>
 
         <!-- carousel -->
         <script>
@@ -297,7 +277,7 @@
               margin: 0,
               loop: true,
               autoplay: true,
-              autoplayTimeout: 3000,
+              autoplayTimeout: 5000,
               autoplayHoverPause: true,
               responsive: {
                 0:{

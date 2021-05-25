@@ -191,6 +191,33 @@ section {
         margin: 2em 0;
     }
 
+    .text-2 {
+        font-size: calc(0.5rem + 0.5vw);
+        color: $primary-1;
+        // @include flex-center();
+        flex-direction: column;
+        margin-top: 2em;
+        white-space: nowrap;
+        // outline: 1px solid red;
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+
+        }
+
+        .phn,
+        .email {
+            text-decoration: underline;
+            margin-top: 0.5em;
+            color: $secondary;
+
+            @media screen and (min-width:768px) {
+                margin-top: initial;
+                margin: 0 1em;
+            }
+        }
+    }
+
 
 }
 
@@ -213,7 +240,7 @@ section {
             .number {
                 font-size: calc(2rem + 3vw);
                 color: $secondary;
-                margin-left: 1rem;
+                margin-right: 0.6em;
             }
         }
     }
@@ -275,31 +302,32 @@ section {
         font-size: calc(1rem + 0.6vw);
     }
 
-    .text-2 {
-        font-size: calc(1.2rem + 1vw);
-        color: $primary-1;
-        @include flex-center();
+    .wrapper-img {
+        width: 100%;
+    }
+
+    .donors {
+        display: flex;
         flex-direction: column;
-        margin-top: 1em;
-        white-space: nowrap;
+        display: flex;
+        justify-content: right;
 
         @media screen and (min-width:768px) {
             flex-direction: row;
-
         }
 
-        .phn,
-        .email {
-            text-decoration: underline;
-            margin-top: 0.5em;
-            color: $secondary;
+        &__img {
+            max-width: 60%;
+            display: block;
+            margin: 0 auto;
 
             @media screen and (min-width:768px) {
-                margin-top: initial;
-                margin: 0 1em;
+                flex-direction: row;
+                margin-left: auto;
             }
         }
     }
+
 }
 
 // =============== section 3 ================

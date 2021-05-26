@@ -238,9 +238,11 @@ section {
             margin-bottom: 3em;
 
             .number {
-                font-size: calc(2rem + 3vw);
+                font-size: calc(2.5rem + 3vw);
                 color: $secondary;
-                margin-right: 0.6em;
+                margin-right: .6em;
+                margin-top: -.2em;
+                align-self: flex-start;
             }
         }
     }
@@ -252,54 +254,11 @@ section {
         text-transform: uppercase;
     }
 
-    .search {
-        display: flex;
-        align-items: center;
-    }
-
-    @media screen and (min-width: 768px) {
-        .search+.search {
-            margin-left: 5vw;
-        }
-    }
-
-    .form-text {
-        font-size: calc(1rem + 1vw);
-        margin: 1.5em 0;
-        font-weight: normal;
-        color: $primary-1;
-    }
-
-    .search-field {
-        width: 70%;
-        font-size: 1rem;
-        border-radius: 100px;
-        border-color: $primary-1;
-        padding: 0.7em;
-        margin-left: auto;
-
-    }
-
-    .table {
-        background-color: #ddd;
-        height: 10vh;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-
     .center {
         @include flex-center();
         flex-direction: column;
         // outline: 1px solid red;
 
-    }
-
-    .request {
-        margin: 2em 0;
-    }
-
-    .request-btn {
-        font-size: calc(1rem + 0.6vw);
     }
 
     .wrapper-img {
@@ -311,19 +270,31 @@ section {
         flex-direction: column;
         display: flex;
         justify-content: right;
+        // border: 1px solid red;
+
 
         @media screen and (min-width:768px) {
             flex-direction: row;
+            padding-left: 5%;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding-left: 20%;
         }
 
         &__img {
-            max-width: 60%;
+            max-width: 100%;
             display: block;
             margin: 0 auto;
+
+            @media screen and (min-width:500px) {
+                max-width: 80%;
+            }
 
             @media screen and (min-width:768px) {
                 flex-direction: row;
                 margin-left: auto;
+                max-width: 100%;
             }
         }
     }

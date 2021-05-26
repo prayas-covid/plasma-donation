@@ -196,7 +196,7 @@ section {
 
 @media screen and (min-width: 768px) {
   .header .navbar .nav-menu .nav-item:nth-child(1) {
-    margin-left: auto;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -432,9 +432,12 @@ section {
 }
 
 .sect-2 .patients-connected .sub-heading .number {
-  font-size: calc(2rem + 3vw);
+  font-size: calc(2.5rem + 3vw);
   color: #358E9D;
-  margin-right: 0.6em;
+  margin-right: .6em;
+  margin-top: -.2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .sect-2 .text {
@@ -442,44 +445,6 @@ section {
   color: #1D4E56;
   margin: 3em 0 0 0;
   text-transform: uppercase;
-}
-
-.sect-2 .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .sect-2 .search + .search {
-    margin-left: 5vw;
-  }
-}
-
-.sect-2 .form-text {
-  font-size: calc(1rem + 1vw);
-  margin: 1.5em 0;
-  font-weight: normal;
-  color: #1D4E56;
-}
-
-.sect-2 .search-field {
-  width: 70%;
-  font-size: 1rem;
-  border-radius: 100px;
-  border-color: #1D4E56;
-  padding: 0.7em;
-  margin-left: auto;
-}
-
-.sect-2 .table {
-  background-color: #ddd;
-  height: 10vh;
-  width: 100%;
-  margin-bottom: 40px;
 }
 
 .sect-2 .center {
@@ -496,14 +461,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.sect-2 .request {
-  margin: 2em 0;
-}
-
-.sect-2 .request-btn {
-  font-size: calc(1rem + 0.6vw);
 }
 
 .sect-2 .wrapper-img {
@@ -530,13 +487,26 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sect-2 .donors {
+    padding-left: 20%;
   }
 }
 
 .sect-2 .donors__img {
-  max-width: 60%;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .sect-2 .donors__img {
+    max-width: 80%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -546,6 +516,7 @@ section {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: auto;
+    max-width: 100%;
   }
 }
 
